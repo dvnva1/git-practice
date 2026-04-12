@@ -1,1 +1,2 @@
-Hello gitecho Hello gitgit init!>git-practice
+Hello git!!
+My second line

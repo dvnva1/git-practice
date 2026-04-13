@@ -20,7 +20,7 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-
+}
 /* Ошибка: неправильное свойство */
 nav ul {
     list-style: none;
@@ -35,7 +35,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hove {  /* Должно быть :hover */
+nav ul li a:hover {  /* Должно быть :hover */
     color: #ffcc00;
 }
 
@@ -43,9 +43,9 @@ nav ul li a:hove {  /* Должно быть :hover */
 main {
     max-width: 1200px;
     margin: 20px auto;
-    background: #fffff;  /* Ошибка: неверный цвет (#fffff вместо #ffffff или #fff) */
+    background: #ffff;  /* Ошибка: неверный цвет (#fffff вместо #ffffff или #fff) */
     padding: 20px;
-    border-redius: 8px;  /* Ошибка: опечатка в border-radius */
+    border-radius: 8px;  /* Ошибка: опечатка в border-radius */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -59,12 +59,12 @@ main {
 /* Ошибка: несуществующее свойство */
 .important {
     font-weight: bold;
-    text-decoration: underlines;  /* Ошибка: underlines вместо underline */
+    text-decoration: underline;  /* Ошибка: underlines вместо underline */
     color: red;
 }
 
 /* Ошибка: неправильный формат медиа-запроса */
-@media (max-width: 600px) 
+@media (max-width: 600px){ 
     body {
         padding: 10px;
     }

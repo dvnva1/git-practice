@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ошибочная страница</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<boby>
+    <header>
+        <h1>Добро пожаловать на сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Наши услуги</h2>
+            <artical>  <!-- Ошибка: неправильный тег (должен быть article) -->
+                <h3>Веб-разработка</h3>
+                <p>Создаем современные сайты</p>
+            </artical>
+
+            <article>
+                <h3>SEO оптимизация</h3>
+                <p>Продвигаем ваш бизнес в топ</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Новости</h2>
+            <p>Мы запустили новый проект! <span class="important">Подробности скоро</span></p>
+            <img src="image.jpg" alt="">  <!-- Ошибка: пустой alt и нет закрывающегося тега -->
+        </aside>
+
+        <!-- Ошибка: форма без указания method и action -->
+        <form>
+            <label>Имя:</label>
+            <input type="text" name="name">
+            <label>Email:</label>
+            <input type="email" name="email" required>
+            <button type="sumbit">Отправить</button>  <!-- Ошибка: опечатка в type="submit" -->
+        </form>
+
+        <!-- Ошибка: вложенность блочного в строчный -->
+        <span>
+            <div>Это неправильная вложенность</div>
+        </span>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Все права защищены</p>
+    </footer>
+
+    <script src="script.js"></script>
+</boby>
+</html>

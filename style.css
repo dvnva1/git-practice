@@ -1,0 +1,74 @@
+/* style.css - файл с ошибками */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Ошибка: незакрытый блок */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+
+/* Ошибка: неправильное свойство */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Ошибка: опечатка в псевдоклассе */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hove {  /* Должно быть :hover */
+    color: #ffcc00;
+}
+
+/* Ошибка: использование неизвестного значения */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fffff;  /* Ошибка: неверный цвет (#fffff вместо #ffffff или #fff) */
+    padding: 20px;
+    border-redius: 8px;  /* Ошибка: опечатка в border-radius */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Ошибка: селектор по тегу с точкой */
+.article {  /* Должно быть article или .article-class */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+/* Ошибка: несуществующее свойство */
+.important {
+    font-weight: bold;
+    text-decoration: underlines;  /* Ошибка: underlines вместо underline */
+    color: red;
+}
+
+/* Ошибка: неправильный формат медиа-запроса */
+@media (max-width: 600px) 
+    body {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+}  /* Ошибка: неправильные скобки */
